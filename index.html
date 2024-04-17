@@ -8,22 +8,29 @@
 </head>
 <body>
 
+    <div class="switch">
+        <input type="checkbox" id="language-switch" />
+        <label for="language-switch">
+            <span></span>
+        </label>
+    </div>
+
 <div class="container">
     <div class="header">
         <div class="full-name">
-            <span class="first-name">First</span>
-            <span class="last-name">last</span>
+            <span class="first-name">LIAO</span>
+            <span class="last-name">JUNCHENG</span>
         </div>
         <div class="contact-info">
             <span class="email">Email: </span>
-            <span class="email-val">first.last@example.com</span>
+            <span class="email-val">2258404376@qq.com</span>
             <span class="separator"></span>
             <span class="phone">Phone: </span>
-            <span class="phone-val">18888888888</span>
+            <span class="phone-val">18567971209</span>
         </div>
 
         <div class="about">
-            <span class="position">Front-End Developer </span>
+            <span class="position"> Back-End Developer </span>
             <span class="desc">
                 I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm
                 motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.
@@ -173,5 +180,38 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var languageSwitch = document.getElementById("language-switch");
+
+    languageSwitch.addEventListener("change", function() {
+        var language = this.checked ? "CN" : "EN";
+        var emailElement = document.querySelector(".email");
+        var phoneElement = document.querySelector(".phone");
+        var firstNameElement = document.querySelector(".first-name");
+        var lastNameElement = document.querySelector(".last-name");
+        var positionElement = document.querySelector(".position");
+        var descElement = document.querySelector(".desc")
+
+        if (language === "CN") {
+            emailElement.innerText = "邮箱：";
+            phoneElement.innerText = "电话号码：";
+            firstNameElement.innerText = "廖";
+            lastNameElement.innerText = "俊丞";
+            positionElement.innerText = "后端开发人员";
+            descElement.innerText = "我是一个前端开发人员，有超过3年的编写html, css和js的经验。我极进取，注重结果，寻求一个成功的团队导向型公司，并有发展机会。";
+        } else {
+            emailElement.innerText = "Email:";
+            phoneElement.innerText = "Phone:";
+            firstNameElement.innerText = "LIAO";
+            lastNameElement.innerText = "JUNCHENG";
+            positionElement.innerText = "Back-End Developer";
+            descElement.innerText = "I am a front-end developer with more than 3 years of experience writing html, css, and js. I'mmotivated, result-focused and seeking a successful team-oriented company with opportunity to grow."
+        }
+    });
+});
+
+</script>
 </body>
 </html>
