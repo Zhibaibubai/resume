@@ -95,6 +95,14 @@ body {
     font-weight: 300;
 }
 
+/* 仓库地址样式 */
+.header .repositories {
+    /* 文字颜色 */
+    color: #999;
+    /* 字体细体 */
+    font-weight: 300;
+}
+
 /* 分隔线样式 */
 .header .separator {
     /* 高度 */
