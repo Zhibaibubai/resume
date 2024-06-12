@@ -29,7 +29,7 @@
             <span class="phone-val">18567971209</span>
             <span class="separator"></span>
             <span class="repositories">repositories:</span>
-            <span class="repositories-val"><a href="https://github.com/2258404376">GitHub</a> and <a href="https://gitee.com/childish-white-not-white">gitee</a></span>
+            <span class="repositories-val"><a href="https://github.com/2258404376" target="_blank">GitHub</a> and <a href="https://gitee.com/childish-white-not-white" target="_blank">gitee</a></span>
         </div>
 
         <div class="about">
@@ -196,6 +196,7 @@
         var lastNameElement = document.querySelector(".last-name");
         var positionElement = document.querySelector(".position");
         var descElement = document.querySelector(".desc")
+        var sectionTitleElement = document.querySelector(".section__title")
 
         if (language === "CN") {
             emailElement.innerText = "邮箱：";
@@ -205,6 +206,7 @@
             lastNameElement.innerText = "俊丞";
             positionElement.innerText = "软件工程师";
             descElement.innerText = "👋 嗨！我是一名'03年出生的大学生，专业是软件工程，立志成为一名真正的软件工程师。💻 对编码和科技充满热情，我致力于精通各种编程语言和框架。我喜欢面对现实世界的挑战，并努力创造有影响力的解决方案。🌱 我致力于不断学习和成长，相信合作和开源贡献的力量可以推动创新。🚀 让我们一起连接，踏上成为卓越软件工程师的激动人心之旅！欢迎查看我的代码仓库，让我们一起编写一些令人惊叹的代码吧！愉快的编码！ 😊✨";
+            sectionTitleElement.innerHTML = "经验"
         } else {
             emailElement.innerText = "Email:";
             phoneElement.innerText = "Phone:";
@@ -213,6 +215,7 @@
             lastNameElement.innerText = "JUNCHENG";
             positionElement.innerText = "Software Engineer";
             descElement.innerText = "👋 Hey there! I'm a '03 university student studying software engineering, aspiring to become a true software engineer.💻 Passionate about coding and technology, I'm dedicated to mastering various programming languages and frameworks. I thrive on real-world challenges and strive to create impactful solutions.🌱 Committed to continuous learning and growth, I believe in the power of collaboration and open-source contributions to drive innovation.🚀 Let's connect and embark on this exciting journey of becoming exceptional software engineers together! Feel free to check out my repositories and let's code something amazing!Happy coding! 😊✨"
+            sectionTitleElement.innerHTML = "Experience"
         }
     });
 });
