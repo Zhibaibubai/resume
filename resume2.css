@@ -32,7 +32,10 @@ body {
     line-height: 26px;
     /* 底部边距 */
     padding-bottom: 50px;
+    cursor: url('./utils/default.cur'),auto;
 }
+
+a { cursor: url('./utils/default2.cur'), pointer; }
 
 /* 设置容器的最大宽度、背景、阴影等 */
 .container {
